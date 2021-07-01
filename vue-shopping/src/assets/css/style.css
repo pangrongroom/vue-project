@@ -1,0 +1,88 @@
+/*------------全局样式-----------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  height: 100%;
+  min-width: 1366px;
+}
+
+.el-card,
+.el-table {
+  margin: 20px 0;
+}
+
+/*设置tree-table的单元格和表头的样式*/
+.zk-table__header-row {
+  color: #ffffff;
+  background-color: #409eff !important;
+}
+
+.zk-table__header-row .zk-table__cell-inner {
+  text-align: center;
+}
+
+.zk-table__body-row > .zk-table__body-cell:nth-of-type(1) {
+  text-align: center;
+}
+
+/*设置警告框的字体*/
+.el-alert .el-alert__description {
+  font-size: 14px !important;
+}
+
+/* 设置表单验证成功时颜色为绿色 已经在el2.6后删除此设计*/
+.el-form-item.is-success .el-input__inner,
+.el-form-item.is-success .el-input__inner:focus,
+.el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus {
+  border-color: #67c23a;
+}
+
+.el-form-item.is-success .el-input-group__append .el-input__inner,
+.el-form-item.is-success .el-input-group__prepend .el-input__inner {
+  border-color: transparent;
+}
+
+.el-form-item.is-success .el-input__validateIcon {
+  color: #67c23a;
+}
+
+/* element的级联选择器Cascader无滚动条样式全部显示超出屏幕解决办法 */
+.el-cascader-panel {
+  height: 200px;
+}
+
+/*设置步骤条的字体*/
+.el-step__title {
+  font-size: 14px !important;
+}
+
+.el-upload-list__item.is-success {
+  width: 5rem;
+}
